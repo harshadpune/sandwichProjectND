@@ -2,4 +2,10 @@
 <resources>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="zero_dp">0dp</dimen>
+    <dimen name="margin_8_dp">8dp</dimen>
+    <dimen name="margin_10_dp">10dp</dimen>
+    <dimen name="margin_16_dp">16dp</dimen>
+    <dimen name="height_200_dp">200dp</dimen>
+    <dimen name="padding_20_dp">20dp</dimen>
 </resources>

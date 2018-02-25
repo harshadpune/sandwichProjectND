@@ -53,6 +53,8 @@ public class DetailActivity extends AppCompatActivity {
         populateUI(sandwich);
         Picasso.with(this)
                 .load(sandwich.getImage())
+//                .placeholder()
+//                .error()
                 .into(ingredientsIv);
 
         setTitle(sandwich.getMainName());
@@ -92,13 +94,10 @@ public class DetailActivity extends AppCompatActivity {
     }
 
     private String convertStringListToString(List<String> stringList){
-        String convertedString = "";
-        for (int i=0; i<stringList.size(); i++) {
-            if(i==0)
-                convertedString = stringList.get(i);
-            else
-                convertedString += ", "+stringList.get(i);
-        }
-        return convertedString;
+
+        StringBuilder convertedString = new StringBuilder();
+            if(stringList.size() > 0)
+                convertedString.append(TextUtils.join(", ",stringList));
+        return String.valueOf(convertedString);
     }
 }
